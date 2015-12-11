@@ -1,0 +1,131 @@
+<head>
+<meta charset="utf-8">
+<title>Dinner Directory & Delivery - Arnold Dickerson</title>
+
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/tabview/assets/skins/sam/tabview.css">
+
+<script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/yahoo-dom-event/yahoo-dom-event.js"> </script>
+
+<script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/element/element-min.js"> </script>
+
+<script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/connection/connection-min.js"> </script>
+
+<script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/tabview/tabview-min.js"> </script>
+
+<style type="text/css">
+body { 
+	margin:0; 
+	padding:0; 
+	height:100%;
+	color:#FFCCFF;
+	background: linear-gradient(to bottom left, purple , red);
+	font-family:New Times Roman, serif, sans-serif
+}
+
+#footer {
+	text-align:center;
+	color:#FFCCFF
+	}
+	
+#header {
+	text-align:center;
+	color:#FFCCFF
+	}
+
+#Customer1 {
+	color:#00FF00;	
+	}
+
+#Customer2 {
+	color:#336600;
+	
+	}
+
+#Customer3 {
+	color:#3300CC;
+	background-color:#FF0000
+	}
+	
+h2 {
+	color:#006;
+	font-weight:bold
+	}
+
+ul li {
+	list-style-position: outside;
+	list-style:square; 
+	
+}
+</style>
+
+
+</head>
+
+<body class="yui-skin-sam" onload="checkUser()">
+
+<div id="header">
+<h1>Dinner Directory &amp; Delivery</h1>
+<p>Todays date is:<br>
+<script type="text/javascript">
+var d=new Date();
+document.write(d);
+</script>Sun Jul 27 2014 19:07:51 GMT-0400 (Eastern Standard Time)
+
+<script type="text/javascript">
+var myTabs = new YAHOO.widget.TabView("demo");
+</script>
+
+</p></div>
+
+<h2>Customers</h2>
+<p>This is the customers page. Click on the customers name to see the items they've ordered.</p>
+
+<div id="demo" class="yui-navset yui-navset-top">
+
+<ul class="yui-nav">
+
+<li title="active" class="selected"><a href="#tab1"><em>Jon Jenkins</em></a></li><li><a href="#tab2"><em>Michael Jackson</em></a></li><li><a href="#tab3"><em>Michael Jordan</em></a></li></ul>
+
+<div class="yui-content">
+<div class="" id="Customer1">
+    <p>555 Sunny Brook Lane<br>
+    Portsmouth, Va, 23704</p>
+    <ul><li>Chicken</li>
+    <li>Eggs</li>
+    <li>Water</li>
+    </ul>
+	
+</div>
+
+<div class="yui-hidden" id="Customer2">
+    <p>5556 Bickford Lane<br>
+    Portsmouth, Va, 23703</p>
+    <ul><li>Bread</li>
+    <li>Lunch Meat</li>
+    <li>Cheese</li>
+    </ul>
+
+</div>
+
+<div class="yui-hidden" id="Customer3">
+    <p>6789 Town Pointe Rd.<br>
+    Portsmouth, Va, 23705</p>
+    <ul><li>Mustard</li>
+    <li>Mayo</li>
+    <li>Toothpaste</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+<p>Tutorials!<br>
+<a href="http://w3schools.com"> w3Schools web site</a><br>
+<a href="http://yuilibrary.com">YUI- free open source JS & CSS Library </a></p>
+
+</div>
+
+</body>

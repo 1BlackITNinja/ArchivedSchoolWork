@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Auto Next Field</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script type="text/javascript">
+/* <![CDATA[ */
+/* ]]> */
+fuction nextField(startField, destField)
+{
+if (startField.value.legnth
+==startField.maxlength)
+destField.focus();
+</script>
+</head>
+<body>
+<form action = "FormProcessor.html" method = "get"
+enctype = "application/x-www-form-urlencoded">
+<p><strong>Enter your 10-digit telephone number: </strong>
+<input type = "text" name ="area_code" size = "4"
+onkeyup = "nextField(this, document.forms[0].exchange)"
+maxlength = "3" />
+<input type = "text" name = "exchange" size = "4"
+onkeyup = "nextField(this, document.forms[0].number) "
+maxlength = "3" />
+<input type = "text" name = "number" size = "5"
+maxlength = "4" /></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Form Help</title>
+<script type = "text/javascript">
+function showHelp(elementId){
+var curElement = document.getElementById(
+elementId);
+var helpElement = document.getElementById(
+"box");
+}
+switch (elementId) {
+case "username":
+helpElement. innerHTML = "Enter a unique user nae that is between 5 and 12 characters.";
+break;
+case "password":
+helpElement. innerHTML = "Enter a password between 6 and 10 characters that contains both upper and lowercase letters and at least one numeric character.";
+break;
+case "password_confirm":
+helpElement. innerHTML
+= "Confirm your selected password.":
+break;
+case "challenge"
+helpElement. innerHTML
+= "Enter your mother's maiden name. This value wul be used to confirm your identity in the event that your forget your password.";
+break;
+}
+helpElement. innerHTML += "<a href=''onclick=\"document.getElementById('box').style.visibility='hidden'; return false;\">
+Close</a>
+document.getElementById('box').style.visibility
+= "visibility";
+document.getElementById('box').style.left
+= curElement.offsetWidth + 20 + "px";
+document.getElementById('box').style.top
+= curElement.offsetTop + "px";
+</script>
+</head>
+<body>
+<h1>Form Help</h1>
+<form action="" method= "get"
+enctype="application/x-www-form-urlencoded">
+<p><strong>User name</strong><br />
+<input type="text" id="username" size="50"
+onmouseover="this.style.cursor='help'"
+onclick="showHelp(this.id)" /></p>
+<p><strong>Password</strong><br />
+<input type="password" id="password" size="50"
+onmouseover="this.style.cursor='help'"
+onclick="showHelp(this.is)" /></p>
+<p><strong>Password Confirm</strong><br />
+<input type="password" id="password_confirm" size="50"
+onmouseover="this.style.cursor='help'"
+onclick="showHelp(this.is)" /></p>
+<p><strong>What is your mother's maiden name?</strong><br />
+<input type="password" id="challenge" size="50"
+onmouseover="this.style.cursor='help'"
+onclick="showHelp(this.is)" /></p>
+</form>
+<div id="box" style="position: absolute;
+visibility: hidden; width: 250px;
+background-color: #FFFCO; font: Comic Sans MS;
+color: #AOOOOO; border: 1px dashed #DOOOOO"></div>
+</body>
+</html>

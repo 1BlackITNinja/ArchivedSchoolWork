@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Investment Picks</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script type="text/javascript">
+/* <![CDATA[ */
+/* ]] */
+fuction updateInvestmetLink(urlText, urlValue)
+{
+document.getElementById(
+'recommendedInvestment').innerHTML
+= urlText + "(Yahoo! Finance)";
+document.getElementById(
+'recommendedInvestment').href
+= urlValue;
+}
+</script>
+</head>
+<body>
+<h1>Investment Picks</h1>
+<form action=""
+enctype="application/x-www-form-urlencoded">
+<p><input type="radio" name="industry"
+onclick="updateInvestmetLink('Gold','http://finance.yahoo.com/q/?s=^YHOh714')" /> Basic
+Materials<br />
+<input type="radio" name="industry"
+onclick="updateInvestmetLink('General Electric Industries Ltd.','http://finance.yahoo.com/q/pr?s=ge')" />
+Conglomerates<br />
+<input type="radio" name="industry"
+onclick="updateInvestmetLink ('Tyson Foods Inc.', 'http://finance.yahoo.com/q/pr?s=tsn')" />
+Consumer Goods<br />
+<input type="radio" name="industry"
+onclick="updateInvestmetLink('Catalyst Health Solutions','http://finance.yahoo.com/q/pr?s=chsi')" />
+Financial<br />
+<input type="radio" name="industry"
+onclick="updateInvestmetLink('Genentech Inc.', 'http://finanace.yahoo.com/q/pr?s=dna')" />
+Healthcare<br />
+<input type="radio" name="industry"
+onclick="updateInvestmetLink('Toll Brothers', 'http://finance.yahoo.com/q/pr?s=tol')" />
+Industrial Goods<br />
+<input type="radio" name="industry"
+onclick="updateInvestmetLink('Sinclair Broadcast Group', 'http://finance.yahoo.com/q/pr?s=sbgi')" />
+Services<br />
+<input type="radio" name="industry"
+onclick="updateInvestmetLink('Verizon Communications Inc.', 'http://finance.yahoo.com/q/pr?s=vz')" />
+Technology<br />
+<input type="radio" name="industry"
+onclick="updateInvestmetLink('Northwest Natural Gas Co.', 'http://finance.yahoo.com/q/pr?s=nwm')" />
+Utilities</p>
+</form>
+<p><a href="http://finance.yahoo.com/"
+id="recommendedInvestment">Yahoo! Finance </a></p>
+</body>
+</html>
